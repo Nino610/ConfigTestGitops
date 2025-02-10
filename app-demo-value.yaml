@@ -5,7 +5,7 @@
 replicaCount: 4
 
 image:
-  repository: rockman88v/demo-app
+  repository: anhdt172/test-gitops
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1.41"
@@ -25,8 +25,7 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext: {}
-  # fsGroup: 2000
+podSecurityContext: {} # fsGroup: 2000
 
 securityContext: {}
   # capabilities:
@@ -47,10 +46,10 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: demo-helm.prod.viettq.com
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
+  - host: demo-helm.prod.viettq.com
+    paths:
+    - path: /
+      pathType: ImplementationSpecific
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
