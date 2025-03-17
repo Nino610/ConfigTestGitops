@@ -8,7 +8,7 @@ image:
   repository: anhdt172/test-gitops
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  # tag: "v1.5"
+  tag: "v1.13"
 
 imagePullSecrets: []
 nameOverride: ""
